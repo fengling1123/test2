@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+</head>
+<body>
+	<header>
+	    <i class="icon iconfont">&#xe656;</i>
+		生活帮
+	</header>
+	<main>
+		<div class="address">
+			北京霄云路26号
+			<i class="icon iconfont">&#xe8f2;</i>
+		</div>
+		<ul class="menu">
+			<li class="on">爱生活</li>
+			<li>帮帮忙</li>
+			<li>晒经验</li>
+		</ul>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<dl>
+						<dt><img src="images/imgs/pic_1.jpg" alt=""></dt>
+						<dd>
+							<h3>电视/影音</h3>
+							<p>经过前两篇的经验洗礼，总算知道如何买到靠谱的宝贝了</p>
+							<div><span>帖子数量：1234</span><span>模板热度67.9</span></div>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/imgs/pic_2.jpg" alt=""></dt>
+						<dd>
+							<h3>冰箱/洗衣机</h3>
+							<p>经过前两篇的经验洗礼，总算知道如何买到靠谱的宝贝了</p>
+							<div><span>帖子数量：1234</span><span>模板热度67.9</span></div>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/imgs/pic_3.jpg" alt=""></dt>
+						<dd>
+							<h3>手机/数码</h3>
+							<p>经过前两篇的经验洗礼，总算知道如何买到靠谱的宝贝了</p>
+							<div><span>帖子数量：1234</span><span>模板热度67.9</span></div>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/imgs/pic_4.jpg" alt=""></dt>
+						<dd>
+							<h3>电脑办公/精品配件</h3>
+							<p>经过前两篇的经验洗礼，总算知道如何买到靠谱的宝贝了</p>
+							<div><span>帖子数量：1234</span><span>模板热度67.9</span></div>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/imgs/pic_1.jpg" alt=""></dt>
+						<dd>
+							<h3>电脑办公/精品配件</h3>
+							<p>经过前两篇的经验洗礼，总算知道如何买到靠谱的宝贝了</p>
+							<div><span>帖子数量：1234</span><span>模板热度67.9</span></div>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/imgs/pic_2.jpg" alt=""></dt>
+						<dd>
+							<h3>冰箱/洗衣机</h3>
+							<p>经过前两篇的经验洗礼，总算知道如何买到靠谱的宝贝了</p>
+							<div><span>帖子数量：1234</span><span>模板热度67.9</span></div>
+						</dd>
+					</dl>
+				</div>
+				<div class="swiper-slide change">
+					帮帮忙
+				</div>
+				<div class="swiper-slide change">
+					晒经验
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<dl>
+			<dt class="icon iconfont">&#xe901;</dt>
+			<dd>身边</dd>
+		</dl>
+		<dl>
+			<dt class="icon iconfont">&#xe901;</dt>
+			<dd>找便宜</dd>
+		</dl>
+		<dl class="over">
+			<dt class="icon iconfont">&#xe901;</dt>
+			<dd>生活帮</dd>
+		</dl>
+		<dl>
+			<dt class="icon iconfont">&#xe901;</dt>
+			<dd>我</dd>
+		</dl>
+	</footer>
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script>
+		var myswiper=new Swiper('.swiper-container')
+		$('.menu').on('click','li',function(){
+			$(this).addClass('on').siblings().removeClass('on');
+			myswiper.slideTo($(this).index());
+		})
+		$('footer').on('click','dl',function(){
+			$(this).addClass('over').siblings().removeClass('over');
+		})
+	</script>
+</body>
+</html>
